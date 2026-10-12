@@ -1,0 +1,29 @@
+body {
+    background: #ffe6af;
+    padding: 100px;
+}
+h1,
+h2,
+h3 {
+    color: #663106;
+    font-family: 'Times New Roman', serif;
+    background: #fff1b3;
+    padding: 10px;}
+
+img {
+    width: 300px; }
+
+UL {
+    color: #2b2925;
+    font-family: 'Times New Roman', serif;}
+
+.highlight_01 { 
+    background:rgb(177, 165, 153), }
+.highlight_01 strong { 
+    background:rgb(125, 114, 133)}
+
+#main { 
+    background:rgb(87, 62, 34); 
+    color:rgb(251, 248, 248); 
+    padding: 10px; 
+    margin: 10px; }
