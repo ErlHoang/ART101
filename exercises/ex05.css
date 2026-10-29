@@ -1,0 +1,13 @@
+.color-circle {
+   display: inline-block;
+   width: 36px;
+   height: 36px;
+   margin-right: 8px;
+   border: 2px solid black;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+#green  { background-color: green; }
+#orange { background-color: orange; }
+#purple { background-color: rgb(122, 15, 193); }
