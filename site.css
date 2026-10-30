@@ -29,7 +29,7 @@ img {
 #introduction {
     background: #f3f7ff;
     padding: 20px;
-    border-left: 6px solid #1d1184;
+    border-left: 6px solid #68441c;
     flex: 2;
 }
 
@@ -72,6 +72,6 @@ img {
 }
 
 .navigation a {
-    color: #1d1184;
+    color: #844e11;
     font-weight: bold;
 }
