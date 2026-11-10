@@ -11,7 +11,7 @@ $("#creature").click(function () {
 
 //.hover has two functions
 //slide down is sliding animation and (300) is over millisconds
-$("$creature").hover (
+$("#creature").hover (
     function () {
         $("#thought").stop(true, true).slideDown(300);
         $("#status").text("The creature revealed a thought.");
@@ -26,10 +26,10 @@ $("$creature").hover (
 $(document).keydown(function (event) {
     if (event.key === " " || event.code === "Space") {
         event.preventDefault();
-
+        
         following = !following;
-        $("#creature").toggleClass("folowing");
-
+        $("#creature").toggleClass("following");
+        
         if (following === true) {
             $("#status").text("The creature is following your cursor.");
         } else {
