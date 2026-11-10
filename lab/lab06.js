@@ -1,15 +1,19 @@
 let following = false;
 
 // $(this) means the specific element that received the event
+//add the transformed class if it is not there, remove it if it is there
+//clicking the creature changes the text in the status div
 $("#creature").click(function () {
-    $(this).toggleClass("transformed"); //add the transformed class if it is not there, remove it if it is there
-    $("#status").text("The creature changed shape."); //clicking the creature changes the text in the status div
+    $(this).toggleClass("transformed");
+    $("#status").text("The creature changed shape.");
 
 });
 
-$("$creature").hover ( //.hover has two functions
+//.hover has two functions
+//slide down is sliding animation and (300) is over millisconds
+$("$creature").hover (
     function () {
-        $("#thought").stop(true, true).slideDown(300); //slide down is sliding animation and (300) is over millisconds
+        $("#thought").stop(true, true).slideDown(300);
         $("#status").text("The creature revealed a thought.");
     },
     function () {
@@ -18,11 +22,12 @@ $("$creature").hover ( //.hover has two functions
     }
 );
 
+//toggle the value of following in following = !following; and change the text in the status div to reflect the new state of following
 $(document).keydown(function (event) {
     if (event.key === " " || event.code === "Space") {
         event.preventDefault();
 
-        following = !following; //toggle the value of following
+        following = !following;
         $("#creature").toggleClass("folowing");
 
         if (following === true) {
