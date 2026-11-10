@@ -11,12 +11,10 @@ $("$creature").hover ( //.hover has two functions
     function () {
         $("#thought").stop(true, true).slideDown(300); //slide down is sliding animation and (300) is over millisconds
         $("#status").text("The creature revealed a thought.");
-
     },
     function () {
         $("#thought").stop(true, true).slideUp(300);
         $("#status").text("The thought disappeared.");
-
     }
 );
 
